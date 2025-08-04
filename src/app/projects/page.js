@@ -71,8 +71,8 @@ export function Project({ title, desc, tech, img, live, code }) {
           src={img}
           alt={title}
           className="w-full h-48 object-cover rounded-md mb-4"
-          height={300}
-          width={300}
+          height={400}
+          width={400}
         />
         <h2 className="text-2xl font-semibold text-white mb-2">{title}</h2>
         <p className="text-sm text-white-muted mb-3">{desc}</p>
