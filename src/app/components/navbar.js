@@ -10,7 +10,7 @@ export default function NavBar() {
 
   return (
     <nav data-aos='fade-down' className="sticky top-0 z-10 h-[10vh] w-full backdrop-blur-[2px] text-white font-medium p-4">
-      <div className="flex justify-between items-center max-w-7xl mx-auto">
+      <div className="flex justify-between backdrop-blur-[5px] items-center max-w-7xl mx-auto">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 text-green-glow">
           <Image src="/ico.svg" width={20} height={81} alt="logo" />
@@ -37,7 +37,7 @@ export default function NavBar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div  className="flex flex-col backdrop-blur-[5px] bg-[rgba(0,0,0,0.5)] lg:hidden mt-4 gap-4 px-2">
+        <div  className="flex flex-col bg-[rgba(0,0,0,0.5)] lg:hidden mt-4 gap-4 px-2">
           <Link href="/" onClick={() => setMenuOpen(false)} className={`${pathname === '/' ? 'text-saffron-primary' : ''}`}>Home</Link>
           <Link href="/projects" onClick={() => setMenuOpen(false)} className={`${pathname === '/projects' ? 'text-saffron-primary' : ''}`}>Work Showcase</Link>
           <Link href="/about" onClick={() => setMenuOpen(false)} className={`${pathname === '/about' ? 'text-saffron-primary' : ''}`}>About</Link>
