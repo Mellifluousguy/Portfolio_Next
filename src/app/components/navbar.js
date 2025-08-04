@@ -37,7 +37,7 @@ export default function NavBar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div  className="flex flex-col lg:hidden mt-4 gap-4 px-2">
+        <div  className="flex flex-col backdrop-blur-[5px] lg:hidden mt-4 gap-4 px-2">
           <Link href="/" onClick={() => setMenuOpen(false)} className={`${pathname === '/' ? 'text-saffron-primary' : ''}`}>Home</Link>
           <Link href="/projects" onClick={() => setMenuOpen(false)} className={`${pathname === '/projects' ? 'text-saffron-primary' : ''}`}>Work Showcase</Link>
           <Link href="/about" onClick={() => setMenuOpen(false)} className={`${pathname === '/about' ? 'text-saffron-primary' : ''}`}>About</Link>
