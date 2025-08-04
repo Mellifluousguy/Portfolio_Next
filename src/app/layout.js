@@ -35,7 +35,6 @@ export default function RootLayout({ children }) {
         className={`${space.variable} antialiased text-space overflow-x-hidden bg-dark-bg`}
       >
         <AOSWrapper />
-        // <div data-aos='fade-in' className="patterns">
           <div className="w-full min-h-screen animate-[glow_5s_infinite_alternate]"> 
           <NavBar />
           {children}
