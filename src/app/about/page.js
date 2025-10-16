@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutPage() {
 
-  const skills = ['HTML', 'CSS', 'Javascript', 'React.js', 'Next.js', 'Hosting', 'Tailwind CSS', 'Framer Motion', 'Responsive Design', 'AOS', 'UI', 'GitHub', 'API Handling', 'React Router']
+  const skills = ['HTML', 'CSS', 'Javascript', 'React.js','Typescript', 'Supabase' 'Next.js', 'Hosting', 'Tailwind CSS', 'Framer Motion', 'Responsive Design', 'AOS', 'UI', 'GitHub', 'API Handling', 'React Router']
 
   return (
     <>
