@@ -17,10 +17,12 @@ export default function AboutPage() {
             <Image src={'/profile.png'} width={300} className=" m-auto h-70 hover:scale-105  rounded-full border-green-glow border-l shadow-inner  shadow-green-glow  w-70" height={300} alt="Profile Picture" />
           </div>
         </div>
-        <section className="text-white grid lg:grid-cols-2 gap-5">
-          <div data-aos='flip-right'>
-
-            <div className=" border hover:scale-105 bg-[#ffffff23] rounded-xs  border-white-muted p-5 md:p-10">
+        
+        {/* FIX APPLIED HERE: Added lg:grid-rows-2 and ensured h-full is used on child divs */}
+        <section className="text-white grid lg:grid-cols-2 lg:grid-rows-2 gap-5">
+          
+          <div data-aos='flip-right' className="h-full">
+            <div className="h-full border hover:scale-105 bg-[#ffffff23] rounded-xs  border-white-muted p-5 md:p-10">
               <h3 className="text-xl md:text-3xl text-white-muted mb-2">
                 Skills
               </h3>
@@ -33,23 +35,24 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          <div data-aos='flip-right'>
-
-            <div className=" border bg-[#ffa0401e] rounded-xs hover:scale-105 border-white-muted p-5 md:p-10">
+          
+          <div data-aos='flip-right' className="h-full">
+            <div className="h-full border bg-[#ffa0401e] rounded-xs hover:scale-105 border-white-muted p-5 md:p-10">
               <h3 className="text-xl md:text-3xl text-saffron-primary mb-2">
                 Interests
               </h3>
-              <ul className="flex text-sm md:text-base flex-col gap-1">
+              <ul className="flex text-sm md:text-base flex-col gap-2">
                 <li><i className="fa-solid fa-pager" /> Building UI</li>
                 <li><i className="fa-solid fa-globe" /> Exploring Web</li>
                 <li><i className="fa-solid fa-circle-exclamation" /> Problem Solving</li>
                 <li><i className="fa-solid fa-bug" /> Debugging</li>
+                <li><i className="fa-solid fa-bolt" /> Performance Optimization</li>
               </ul>
             </div>
           </div>
 
-          <div data-aos='flip-right'>
-            <div className=" border rounded-xs hover:scale-105 bg-[#42a4f527] border-white-muted p-5 md:p-10">
+          <div data-aos='flip-right' className="h-full">
+            <div className="h-full border rounded-xs hover:scale-105 bg-[#42a4f527] border-white-muted p-5 md:p-10">
               <h3 className="text-xl md:text-3xl text-blue-chakra mb-2">
                 Tools & Technologies
               </h3>
@@ -62,8 +65,8 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div data-aos='flip-right'>
-            <div className=" border rounded-xs hover:scale-105 bg-[#66ffb318] border-white-muted p-5 md:p-10">
+          <div data-aos='flip-right' className="h-full">
+            <div className="h-full border rounded-xs hover:scale-105 bg-[#66ffb318] border-white-muted p-5 md:p-10">
               <h3 className="text-xl md:text-3xl text-green-primary mb-2">
                 What I Offer
               </h3>
