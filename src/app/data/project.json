@@ -1,0 +1,57 @@
+[
+  {
+    "title": "AI Voice Recognizer",
+    "desc": "Feature-rich social network built with MERN stack, including live messaging, dynamic profiles, and an admin dashboard.",
+    "tech": ["React.js", "Tauri 2.0", "CSS", "Deepgram API", "Rust"],
+    "img": "/projects/voiceRecognizer.png",
+    "code": "https://github.com/Mellifluousguy/PortXnectCode"
+  },
+  {
+    "title": "Social Media Platform",
+    "desc": "A fully featured Social Media Platform with Unique Connectivity, Chat, Admin Panel, Edit Profile and many more.",
+    "tech": ["MERN", "Framer Motion", "Socket.io", "Tailwind CSS"],
+    "img": "/projects/social.png",
+    "live": "https://portxnect.onrender.com",
+    "code": "https://github.com/Mellifluousguy/PortXnectCode"
+  },
+  {
+    "title": "Blog Page",
+    "desc": "An animated Blog Page with filtering blogs based on tags and time period.",
+    "tech": ["React", "Framer Motion", "Tailwind CSS"],
+    "img": "/projects/blog.png",
+    "live": "https://blogpage-qcee.onrender.com/",
+    "code": "https://github.com/Mellifluousguy/BlogPage"
+  },
+  {
+    "title": "Software License Page",
+    "desc": "SoftSell is a modern marketplace UI for buying and selling unused software licenses.",
+    "tech": ["React", "Tailwind CSS", "Framer Motion"],
+    "img": "/projects/softsell.png",
+    "live": "https://softsell-5ydr.onrender.com/#",
+    "code": "https://github.com/Mellifluousguy/SoftSell"
+  },
+  {
+    "title": "WSI Viewer",
+    "desc": "React-based Whole Slide Image Viewer with zoom, pan, bounding boxes, and mini-map.",
+    "tech": ["React", "Tailwind CSS", "React Tooltip"],
+    "img": "/projects/wsi.png",
+    "live": "https://wsiviewer.netlify.app/",
+    "code": "https://github.com/Mellifluousguy/WSIViewer"
+  },
+  {
+    "title": "Search Engine",
+    "desc": "SearchXM is a responsive search engine providing web, image, and news results.",
+    "tech": ["React", "Tailwind CSS", "React Router"],
+    "img": "/projects/search.png",
+    "live": "https://searchxm.netlify.app/",
+    "code": "https://github.com/Mellifluousguy/SearchxM"
+  },
+  {
+    "title": "Service Page",
+    "desc": "Mecode is a service-based website with multi-page routing.",
+    "tech": ["React", "CSS", "React Router"],
+    "img": "/projects/mecode.png",
+    "live": "https://mecode.netlify.app/",
+    "code": "https://github.com/Mellifluousguy/MeCode_Hub"
+  }
+]

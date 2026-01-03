@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </div>
       
-        <Image src={'/home.png'} className=" w-[70%] flex lg:hidden" height={100} width={100} alt='home'/>
+        <Image src={'/hero.svg'} className=" w-[70%] flex lg:hidden" height={100} width={100} alt='home'/>
       
     </div>
   );
