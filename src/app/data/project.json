@@ -4,7 +4,7 @@
     "desc": "Feature-rich social network built with MERN stack, including live messaging, dynamic profiles, and an admin dashboard.",
     "tech": ["React.js", "Tauri 2.0", "CSS", "Deepgram API", "Rust"],
     "img": "/projects/voiceRecognizer.png",
-    "code": "https://github.com/Mellifluousguy/PortXnectCode"
+    "code": "https://github.com/Mellifluousguy/Tauri-Voice-to-Text-Automater"
   },
   {
     "title": "Social Media Platform",
