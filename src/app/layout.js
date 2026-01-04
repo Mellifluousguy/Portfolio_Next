@@ -1,44 +1,90 @@
-
-import { Geist, Space_Grotesk } from "next/font/google";
-import AOSWrapper from './components/AOSWrapper'
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
+import AOSWrapper from "./components/AOSWrapper";
+import NavBar from "./components/navbar";
 
-import NavBar from './components/navbar'
-
-
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 const space = Space_Grotesk({
-  variable: "--font-space-grotesk",
   subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
 });
+
 export const metadata = {
-  title: "Portfolio - Mellifluousguy",
-  description: "Portfolio of Mohit Gupta a Frontend Developer.",
+  title: {
+    default: "Mohit Gupta | Frontend Developer Portfolio",
+    template: "%s | Mohit Gupta",
+  },
+  description:
+    "Mohit Gupta is a BCA student and Frontend Developer specialising in React, Next.js, Tailwind CSS and modern web development.",
+  keywords: [
+    "Mohit Gupta",
+    "Frontend Developer Portfolio",
+    "React Developer India",
+    "Next.js Developer",
+    "BCA Student Portfolio",
+    "Web Developer Portfolio",
+    "Mellifluousguy",
+    "mellifluousguy",
+    "Mellifluousguy Developer",
+    "Mellifluousguy Mohoit Gupta",
+  ],
+  authors: [{ name: "Mohit Gupta" }],
+  creator: "Mohit Gupta",
+  metadataBase: new URL("https://mellifluousguy.vercel.app"), // replace with custom domain later
+  openGraph: {
+    title: "Mohit Gupta | Frontend Developer",
+    description:
+      "Portfolio of Mohit Gupta showcasing React, Next.js, Tailwind CSS projects.",
+    url: "https://mellifluousguy.vercel.app",
+    siteName: "Mohit Gupta Portfolio",
+    images: [
+      {
+        url: "/hero.svg",
+        width: 1200,
+        height: 630,
+        alt: "Mohit Gupta Portfolio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mohit Gupta | Frontend Developer",
+    description:
+      "Frontend Developer Portfolio built using Next.js and Tailwind CSS.",
+    images: ["/hero.svg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: "/tabIcon.svg",
+    shortcut: "/tabIcon.svg",
+    apple: "/tabIcon.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
-
   return (
-    <html lang="en">
-      <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
-        <Script src={`https://www.google.com/recaptcha/api.js`} async defer />
-      </head>
-      <body
-        // className={`${geistSans.variable} antialiased`}
-        className={`${space.variable} antialiased text-space overflow-x-hidden bg-dark-bg`}
-      >
+    <html lang="en" className={space.variable}>
+      <body className="antialiased text-space overflow-x-hidden bg-dark-bg">
+        {/* Animation On Scroll */}
         <AOSWrapper />
-          <div className="w-full min-h-screen animate-[glow_5s_infinite_alternate]"> 
+
+        {/* Layout */}
+        <div className="w-full min-h-screen animate-[glow_5s_infinite_alternate]">
           <NavBar />
           {children}
         </div>
+
+        {/* Load reCAPTCHA ONLY if really required */}
+        <Script
+          src="https://www.google.com/recaptcha/api.js"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
