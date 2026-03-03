@@ -70,6 +70,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={space.variable}>
+      
       <body className="antialiased text-space overflow-x-hidden bg-dark-bg">
         {/* Animation On Scroll */}
         <AOSWrapper />
