@@ -19,8 +19,6 @@ export default function contactPage() {
           <label htmlFor="message" className="mb-2 text-green-glow">Message</label>
           <textarea id="message" name="message" required className="border h-40 mb-4 p-2 rounded-md border-blue-chakra resize-none outline-green-primary" />
 
-          <div className="g-recaptcha" data-sitekey={process.env.NEXT_PUBLIC_CONTACT_SITE_KEY}></div>
-
           <button type="submit" aria-label="Send message" className="bg-green-primary mt-2 text-white px-4 py-2 rounded-md hover:bg-green-600 transition">
             Send Message
           </button>
