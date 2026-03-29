@@ -1,4 +1,8 @@
+import { Mail, Instagram, Linkedin, Github } from "lucide-react";
+
+
 export default function contactPage() {
+  const linkStyle = "flex items-center gap-2 hover:opacity-80 transition";
   return (
     <div className="px-5 md:px-20 py-10 text-white-muted md:text-xl w-lvw">
       <h1 data-aos='fade-down' className="text-6xl w-fit  mx-auto">Contact</h1>
@@ -28,10 +32,46 @@ export default function contactPage() {
         <div data-aos='zoom-in-left' className="border border-green-primary hover:shadow-blue-glow shadow-xs flex flex-col h-fit bg-[#00a76f11] rounded-lg p-3 md:p-5">
           <h2 className=" text-2xl mb-2 text-green-glow">Also find me on </h2>
           <div className="flex flex-col gap-2">
-            <a target="_blank" href="mailto:mohitdeveloperg@gmail.com" ><i className="fa-solid text-green-primary fa-envelope" /> mohitdeveloperg@gmail.com</a>
-            <a target="_blank" href="https://instagram.com/mellifluousguy_" ><i className="fa-brands text-saffron-primary fa-instagram" /> mellifluousguy_</a>
-            <a target="_blank" href="https://linkedin.com/in/mellifluousguy" ><i className="fa-brands text-blue-chakra fa-linkedin" /> mellifluousguy</a>
-            <a target="_blank" href="https://github.com/mellifluousguy" ><i className="fa-brands fa-github" /> mellifluousguy</a>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+              href="mailto:mohitdeveloperg@gmail.com"
+            >
+              <Mail className="text-red-400" strokeWidth={1.5} size={24} />
+              mohitdeveloperg@gmail.com
+            </a>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+              href="https://instagram.com/mellifluousguy_"
+            >
+              <Instagram className="text-pink-400" strokeWidth={1.5} size={24} />
+              mellifluousguy_
+            </a>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+              href="https://linkedin.com/in/mellifluousguy"
+            >
+              <Linkedin className="text-sky-400" strokeWidth={1.5} size={24} />
+              mellifluousguy
+            </a>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+              href="https://github.com/mellifluousguy"
+            >
+              <Github className="text-gray-200" strokeWidth={1.5} size={24} />
+              mellifluousguy
+            </a>
           </div>
 
         </div>

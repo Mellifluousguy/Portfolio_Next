@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { Layout, Globe, AlertCircle, Bug, Zap, ArrowRight, Code, MonitorSmartphone, Folder, Users } from "lucide-react";
 
 export default function AboutPage() {
 
-  const skills = ['HTML', 'CSS', 'Javascript', 'React.js', 'Redux','Typescript', 'Supabase', 'Next.js', 'Hosting', 'Tailwind CSS', 'Framer Motion', 'Responsive Design', 'AOS', 'UI', 'GitHub', 'API Handling', 'React Router']
+  const skills = ['HTML', 'CSS', 'Javascript', 'React.js', 'Redux', 'Typescript', 'Supabase', 'Next.js', 'Hosting', 'Tailwind CSS', 'Framer Motion', 'Responsive Design', 'AOS', 'UI', 'GitHub', 'API Handling', 'React Router', 'Webflow', 'Wix', 'Figma', 'Git', 'Netlify', 'Vercel', 'Postman', 'Debugging', 'Performance Optimization', 'Collaboration', 'Project Showcasing'];
 
   return (
     <>
@@ -17,10 +18,10 @@ export default function AboutPage() {
             <Image src={'/profile.png'} width={300} className=" m-auto h-70 hover:scale-105  rounded-full border-green-glow border-l shadow-inner  shadow-green-glow  w-70" height={300} alt="Profile Picture" />
           </div>
         </div>
-        
+
         {/* FIX APPLIED HERE: Added lg:grid-rows-2 and ensured h-full is used on child divs */}
         <section className="text-white grid lg:grid-cols-2 lg:grid-rows-2 gap-5">
-          
+
           <div data-aos='flip-right' className="h-full">
             <div className="h-full border hover:scale-105 bg-[#ffffff23] rounded-xs  border-white-muted p-5 md:p-10">
               <h3 className="text-xl md:text-3xl text-white-muted mb-2">
@@ -35,18 +36,32 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          
+
           <div data-aos='flip-right' className="h-full">
             <div className="h-full border bg-[#ffa0401e] rounded-xs hover:scale-105 border-white-muted p-5 md:p-10">
               <h3 className="text-xl md:text-3xl text-saffron-primary mb-2">
                 Interests
               </h3>
               <ul className="flex text-sm md:text-base flex-col gap-2">
-                <li><i className="fa-solid fa-pager" /> Building UI</li>
-                <li><i className="fa-solid fa-globe" /> Exploring Web</li>
-                <li><i className="fa-solid fa-circle-exclamation" /> Problem Solving</li>
-                <li><i className="fa-solid fa-bug" /> Debugging</li>
-                <li><i className="fa-solid fa-bolt" /> Performance Optimization</li>
+                <li className="flex items-center gap-2">
+                  <Layout className="text-green-400" size={16} /> Building UI
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <Globe className="text-blue-400" size={16} /> Exploring Web
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <AlertCircle className="text-yellow-400" size={16} /> Problem Solving
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <Bug className="text-red-400" size={16} /> Debugging
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <Zap className="text-purple-400" size={16} /> Performance Optimization
+                </li>
               </ul>
             </div>
           </div>
@@ -57,10 +72,21 @@ export default function AboutPage() {
                 Tools & Technologies
               </h3>
               <ul className="flex text-sm md:text-base flex-col gap-1">
-                <li><i className="fa-solid fa-hand-point-right" /> Vercel</li>
-                <li><i className="fa-solid fa-hand-point-right" /> Git & Github</li>
-                <li><i className="fa-solid fa-hand-point-right" /> Postman</li>
-                <li><i className="fa-solid fa-hand-point-right" /> Netlify</li>
+                <li className="flex items-center gap-2">
+                  <ArrowRight className="text-orange-400" size={16} /> Vercel
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <ArrowRight className="text-orange-400" size={16} /> Git & GitHub
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <ArrowRight className="text-orange-400" size={16} /> Postman
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <ArrowRight className="text-orange-400" size={16} /> Netlify
+                </li>
               </ul>
             </div>
           </div>
@@ -70,11 +96,23 @@ export default function AboutPage() {
               <h3 className="text-xl md:text-3xl text-green-primary mb-2">
                 What I Offer
               </h3>
+
               <ul className="flex flex-col text-sm md:text-base gap-1">
-                <li><i className="fa-solid fa-hand-point-right" /> Frontend Development</li>
-                <li><i className="fa-solid fa-hand-point-right" /> Responsive UI Design</li>
-                <li><i className="fa-solid fa-hand-point-right" /> Project Showcasing</li>
-                <li><i className="fa-solid fa-hand-point-right" /> Collaboration Skills</li>
+                <li className="flex items-center gap-2">
+                  <Code className="text-green-400" size={16} /> Frontend Development
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <MonitorSmartphone className="text-blue-400" size={16} /> Responsive UI Design
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <Folder className="text-yellow-400" size={16} /> Project Showcasing
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <Users className="text-purple-400" size={16} /> Collaboration Skills
+                </li>
               </ul>
             </div>
           </div>
